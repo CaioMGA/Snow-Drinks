@@ -187,6 +187,7 @@ const playMusic = () => {
         bgm.pause()
     }
     bgm = new Audio('gameplay.ogg')
+    bgm.loop = true
     bgm.play()
 }
 
