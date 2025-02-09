@@ -1,0 +1,247 @@
+:root{
+    --white    : #f1faee;
+    --grey1    : #a8dadc;
+    --grey2    : #457b9d;
+    --black    : #1d3557;
+    --blackest : #191d32;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hidden{
+    display: none;
+}
+
+html{
+    background-color: var(--grey1);
+}
+
+body {
+    background-color: var(--blackest);
+    color: var(--white);
+    font-family: "Nixie One", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 640px;
+    height: 360px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: "Limelight", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    margin-block: 0;
+    margin-inline: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+button {
+    background-color: var(--grey1);
+    color: var(--black);
+    padding: .5rem;
+    width: 200px;
+    border-radius: 2rem;
+}
+
+button:active {
+    background-color: var(--grey2);
+    color: var(--black);
+}
+
+button:disabled {
+    background-color: var(--black);
+    color: var(--grey1);
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: var(--grey1);
+}
+
+.special {
+    font-weight: 800;
+}
+
+.settings-controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.important-button {
+    background-color: crimson;
+    color: var(--white);
+    width: auto;
+    padding: 0.5rem 1rem;
+}
+
+#game-title{
+    font-size: 4rem;
+}
+
+#level-select-buttons{
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+/* Toggles*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--black);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--grey2);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+input:checked + .slider {
+    background-color: var(--grey1);
+  }
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--grey2);
+  }
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.ingredients-panel{
+    max-width: 40%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 2rem;
+}
+
+.ingredient-button{
+    margin: 0.1rem 0;
+}
+
+h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+/*Level 1*/
+
+.level {
+    align-items: start;
+    justify-content: start;
+    padding: 1rem 0 0 1rem;
+}
+
+/* Testing */
+
+.test {
+    position: fixed;
+    top:10px;
+    left: 10px;
+}
+
+.square-32{
+    width: 32px;
+    height: 32px;
+    text-align: center;
+
+}
+
+.white{
+    background-color: var(--white);
+    color: var(--blackest);
+}
+
+.grey1{
+    background-color: var(--grey1);
+}
+
+.grey2{
+    background-color: var(--grey2);
+}
+
+.black{
+    background-color: var(--black);
+}
+
+.blackest{
+    background-color: var(--blackest);
+}

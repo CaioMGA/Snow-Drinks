@@ -1,0 +1,19 @@
+# Level 1
+
+Correct order:
+garlic
+fire
+water
+honey
+
+Interactions
+honey + fire - water = burns honey
+fire then garlic = burns garlic
+fire then honey = burns honey
+water then garlic = garlic undercooked
+
+ingredients have age on pan
+create coocking systemcreate fail conditions
+describe what happens when ingredients are put on pan
+this game is in fact a dialogue tree
+this could be a visual novel

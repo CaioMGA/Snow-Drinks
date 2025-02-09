@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>𝑺𝑵𝑶𝑾𝑫𝑹𝑰𝑵𝑲𝑺​​​​​</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Nixie+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="init()">
+    <div class="test hidden">
+        <div class="square-32 white">1</div>
+        <div class="square-32 grey1">2</div>
+        <div class="square-32 grey2">3</div>
+        <div class="square-32 black">4</div>
+        <div class="square-32 blackest">5</div>
+
+    </div>
+    <main class="intro" id="title-screen">
+        <h1 id="game-title">S N O W D R I N K S</h1>
+        <p class="regular-text">Lorem Ipsum dolor sit amet consectuer no dispuiat lemo non vero est insignia.</p>
+        <button id="ts-play">Play</button>
+        <button id="ts-settings">Settings</button>
+        <button id="ts-credits">Credits</button>
+    </main>
+    <main class="level-select hidden" id="level-select">
+        <h1>Level Select</h1>
+        <div id="level-select-buttons">
+            <button id="select-lvl1">Easy</button>
+            <button id="select-lvl2">Medium</button>
+            <button id="select-lvl3">Hard</button>
+        </div>
+        <button class="back-button">Back</button>
+    </main>
+    <main class="level hidden" id="lvl1">
+        <h3>Level 1</br>Sniffles Tea</h3>
+        <div class="ingredients-panel">
+            <h4>Ingredients</h4>
+            <button class="ingredient-button btn0">Honey</button>
+            <button class="ingredient-button btn1">Garlic</button>
+            <button class="ingredient-button btn2">Fire</button>
+            <button class="ingredient-button btn3">Water</button>
+        </div>
+        <button class="back-button bottom-right">Back</button>    </main>
+
+    <main class="level hidden" id="lvl2">
+        <h3>Level 2</br>Sniffles Tea</h3>
+        <div class="ingredients-panel">
+            <h4>Ingredients</h4>
+            <button class="ingredient-button btn0">Honey</button>
+            <button class="ingredient-button btn1">Garlic</button>
+            <button class="ingredient-button btn2">Fire</button>
+            <button class="ingredient-button btn3">Water</button>
+            <button class="ingredient-button btn4">Herbs</button>
+        </div>
+        <button class="back-button bottom-right">Back</button>    </main>
+
+    <main class="level hidden" id="lvl3">
+        <h3>Level 3</br>Sniffles Tea</h3>
+        <h4>Ingredients</h4>
+        <div class="ingredients-panel">
+            <button class="ingredient-button btn0">Honey</button>
+            <button class="ingredient-button btn1">Garlic</button>
+            <button class="ingredient-button btn2">Fire</button>
+            <button class="ingredient-button btn3">Water</button>
+            <button class="ingredient-button btn4">Herbs</button>
+            <button class="ingredient-button btn5">Rum</button>
+            <button class="ingredient-button btn6">Cinnamon</button>
+
+        </div>
+        <button class="back-button bottom-right">Back</button>
+    </main>
+    
+    <main class="settings hidden" id="settings-screen">
+        <h1>Settings</h1>
+
+        <div class="settings-controls">
+            <div id="music-toggle-container" class="toggle-container">
+                <h2>Music</h2>
+                <label class="switch">
+                    <input type="checkbox" id="music-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div id="sfx-toggle-container"  class="toggle-container">
+                <h2>Sound Effects</h2>
+                <label class="switch">
+                    <input type="checkbox" id="sfx-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div id="reset-container">
+                <h2>Reset</h2>
+                <button class="important-button">Reset Progress</button>
+            </div>
+
+        </div>
+        <button class="back-button">Back</button>
+    </main>
+    <main class="credits hidden" id="credits-screen">
+        <h1>C R E D I T S</h1>
+        <p class="regular-text">A game by <a href="http://caiomga.com" target="_blank">Caio Amaral</a></p>
+        <p>Done in 5 hours for the <span class="special">24-Hour Game Jam (TNTech Spring '25)</span></p>
+        <p>Music: H2O, by <a href="https://drive.google.com/drive/folders/0Bw4MH6EXU9vTQzlNQk9qU2dTc0U?resourcekey=0-1GvmdZliKVXPgxnNAgCuBw" target="blank_">nosoapradio</a></p>
+        <button class="back-button">Back</button>
+    </main>
+
+    <script src="app.js" async defer></script>
+</body>
+
+</html>
