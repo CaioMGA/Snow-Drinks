@@ -46,6 +46,11 @@ h3 {
     margin-inline: 0;
 }
 
+p {
+    max-width: 400px;
+    text-align: justify;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -83,6 +88,9 @@ a:visited {
     color: var(--grey1);
 }
 
+.tagline {
+    max-width: 300px;
+}
 .special {
     font-weight: 800;
 }
@@ -202,13 +210,30 @@ h4 {
     right: 1rem;
 }
 
-/*Level 1*/
+.top-right {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
 
 .level {
     align-items: start;
     justify-content: start;
     padding: 1rem 0 0 1rem;
 }
+
+.feedback-panel {
+    position: fixed;
+    right: 1rem;
+    top:4rem;
+    bottom: 4rem;
+    text-align: right;
+}
+
+.feedback-log {
+    text-align: right;
+}
+
 
 /* Testing */
 

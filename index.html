@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body onload="init()">
+<body>
     <div class="test hidden">
         <div class="square-32 white">1</div>
         <div class="square-32 grey1">2</div>
@@ -28,9 +28,9 @@
         <div class="square-32 blackest">5</div>
 
     </div>
-    <main class="intro" id="title-screen">
+    <main class="intro hidden" id="title-screen">
         <h1 id="game-title">S N O W D R I N K S</h1>
-        <p class="regular-text">Lorem Ipsum dolor sit amet consectuer no dispuiat lemo non vero est insignia.</p>
+        <p class="tagline">Brew the ingredients in the right order to survive this cold winter.</p>
         <button id="ts-play">Play</button>
         <button id="ts-settings">Settings</button>
         <button id="ts-credits">Credits</button>
@@ -38,42 +38,46 @@
     <main class="level-select hidden" id="level-select">
         <h1>Level Select</h1>
         <div id="level-select-buttons">
-            <button id="select-lvl1">Easy</button>
-            <button id="select-lvl2">Medium</button>
-            <button id="select-lvl3">Hard</button>
+            <button id="select-lvl1">Sniffles Tea (Easy)</button>
+            <button id="select-lvl2" >Stronger Tea(Medium)</button>
+            <button id="select-lvl3" >Granpa's Flu Exterminator(Hard)</button>
         </div>
         <button class="back-button">Back</button>
     </main>
-    <main class="level hidden" id="lvl1">
+    <main class="level" id="lvl1">
         <h3>Level 1</br>Sniffles Tea</h3>
         <div class="ingredients-panel">
             <h4>Ingredients</h4>
             <button class="ingredient-button btn0">Honey</button>
             <button class="ingredient-button btn1">Garlic</button>
-            <button class="ingredient-button btn2">Fire</button>
+            <button class="ingredient-button btn2">Turn on Fire</button>
             <button class="ingredient-button btn3">Water</button>
         </div>
-        <button class="back-button bottom-right">Back</button>    </main>
+        <button class="back-button bottom-right">Back</button>
+        <button class="restart-level top-right">Restart</button>
+    </main>
 
     <main class="level hidden" id="lvl2">
-        <h3>Level 2</br>Sniffles Tea</h3>
+        <h3>Level 2</br>Stronger Tea</h3>
         <div class="ingredients-panel">
             <h4>Ingredients</h4>
             <button class="ingredient-button btn0">Honey</button>
             <button class="ingredient-button btn1">Garlic</button>
-            <button class="ingredient-button btn2">Fire</button>
+            <button class="ingredient-button btn2">Turn on Fire</button>
             <button class="ingredient-button btn3">Water</button>
             <button class="ingredient-button btn4">Herbs</button>
         </div>
-        <button class="back-button bottom-right">Back</button>    </main>
+        <button class="back-button bottom-right">Back</button>
+        <button class="restart-level top-right">Restart</button>
+    </main>
 
     <main class="level hidden" id="lvl3">
-        <h3>Level 3</br>Sniffles Tea</h3>
+        <h3>Level 3</br>Granpa's Flu Exterminator</h3>
         <h4>Ingredients</h4>
         <div class="ingredients-panel">
             <button class="ingredient-button btn0">Honey</button>
             <button class="ingredient-button btn1">Garlic</button>
-            <button class="ingredient-button btn2">Fire</button>
+            <button class="ingredient-button btn2">Turn on Fire</button>
             <button class="ingredient-button btn3">Water</button>
             <button class="ingredient-button btn4">Herbs</button>
             <button class="ingredient-button btn5">Rum</button>
@@ -81,6 +85,7 @@
 
         </div>
         <button class="back-button bottom-right">Back</button>
+        <button class="restart-level top-right">Restart</button>
     </main>
     
     <main class="settings hidden" id="settings-screen">
@@ -90,23 +95,23 @@
             <div id="music-toggle-container" class="toggle-container">
                 <h2>Music</h2>
                 <label class="switch">
-                    <input type="checkbox" id="music-toggle">
+                    <input type="checkbox" checked id="music-toggle">
                     <span class="slider"></span>
                 </label>
             </div>
 
-            <div id="sfx-toggle-container"  class="toggle-container">
+            <!-- <div id="sfx-toggle-container"  class="toggle-container">
                 <h2>Sound Effects</h2>
                 <label class="switch">
                     <input type="checkbox" id="sfx-toggle">
                     <span class="slider"></span>
                 </label>
-            </div>
+            </div> -->
 
-            <div id="reset-container">
+            <!-- <div id="reset-container" >
                 <h2>Reset</h2>
-                <button class="important-button">Reset Progress</button>
-            </div>
+                <button disabled class="important-button">Reset Progress</button>
+            </div> -->
 
         </div>
         <button class="back-button">Back</button>
@@ -114,11 +119,13 @@
     <main class="credits hidden" id="credits-screen">
         <h1>C R E D I T S</h1>
         <p class="regular-text">A game by <a href="http://caiomga.com" target="_blank">Caio Amaral</a></p>
-        <p>Done in 5 hours for the <span class="special">24-Hour Game Jam (TNTech Spring '25)</span></p>
+        <p>Done in 4 hours for the <span class="special">24-Hour Game Jam (TNTech Spring '25)</span></p>
         <p>Music: H2O, by <a href="https://drive.google.com/drive/folders/0Bw4MH6EXU9vTQzlNQk9qU2dTc0U?resourcekey=0-1GvmdZliKVXPgxnNAgCuBw" target="blank_">nosoapradio</a></p>
         <button class="back-button">Back</button>
     </main>
-
+    <div class="feedback-panel">
+        <p id="feedback-log"></p>
+    </div>
     <script src="app.js" async defer></script>
 </body>
 
